@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Card application Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body><div class="flex flex-col p-5 gap-5">
+    <h1 class=" p-2 text-2xl font-bold border-4 border-orange-600 text-center text-orange-400 bg-orange-100">Library Card Application Form</h1>
+    <div class="flex flex-col gap-5  sm:flex-row sm:h-screen sm:items-center">
+        <img src="./abc.jpg" class="w-full h-screen sm:w-full border-4 border-orange-600">
+        <form class="flex flex-col gap-5 border-4 border-orange-600 bg-orange-100 p-5 justify-center text-center w-full h-full sm:w-full">
+        <label>
+            Name:<input class="border w-full shadow-lg p-1 m-2 shadow-orange-300 text-center" type="text" required placeholder="Your Name"/>
+        </label>
+        <label>
+            E-mail:<input class="border w-full shadow-lg p-1 m-2 shadow-orange-300 text-center" type="email" required placeholder="abc@example.com"/>
+        </label>
+        <label>
+            Phone No.:<input class="border w-full shadow-lg p-1 m-2 shadow-orange-300 text-center" type="tel" required size="10" minlength="10" maxlength="10" pattern="[0-9]{10}" placeholder="##########">
+        </label>
+        <label>
+            Address:<input class="border w-full shadow-lg p-1 m-2 shadow-orange-300 text-center" type="text"  name="address" required placeholder="Your address here"/>
+        </label>
+        <label>
+            City:
+            <select class="border w-full shadow-lg p-1 m-2 shadow-orange-300 text-center" required> 
+                <option value="select">Select</option>
+                <option value="Sonipat">Sonipat</option>
+                <option value="Gurugram">Gurugram</option>
+                <option value="Noida">Noida</option>
+                <option value="Delhi">Delhi</option>
+            </select>
+        </label>
+        <label>
+            Identity Card Photo:<input class="border w-full shadow-lg p-1 m-2 shadow-orange-300 text-center bg-white" type="file" required/>
+        </label>
+        <label>
+            <input type="checkbox" required class="border shadow-lg p-1 m-2 shadow-orange-300 text-center"/>I will be responsible for loss, damage or fines on this card and I abide by library use policy. 
+        </label>
+        <input type="submit" class="border-4 border-orange-400 bg-orange-500 w-full text-white shadow-lg p-1 m-2 shadow-orange-300 hover:bg-orange-700  hover:border-orange-800 rounded-lg text-center cursor-pointer" value="Submit" name="Submit"/>
+        
+    </form>
+    </div>
+</div>
+</body>
+</html>
